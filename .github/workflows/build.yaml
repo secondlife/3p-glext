@@ -1,0 +1,14 @@
+name: Build
+on: [push]
+jobs:
+  build:
+    runs-on: [ubuntu-latest] 
+    steps:
+      - name: Autobuild 
+        uses: secondlife/action-autobuild@v3
+        with:
+          platform: common
+
+      - name: Publish
+        uses: secondlife/action-autobuild-release@v2
+        if: startsWith(github.ref, 'refs/tags/v')
