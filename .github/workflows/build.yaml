@@ -5,7 +5,7 @@ jobs:
     runs-on: [ubuntu-latest] 
     steps:
       - name: Autobuild 
-        uses: secondlife/action-autobuild@v4
+        uses: secondlife/action-autobuild@v5
         with:
           platform: common
 
