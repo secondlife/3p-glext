@@ -43,6 +43,7 @@
           </map>
           <key>manifest</key>
           <array>
+            <string>include/EGL</string>
             <string>include/GL</string>
             <string>include/KHR</string>
           </array>
